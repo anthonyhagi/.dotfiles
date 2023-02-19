@@ -3,7 +3,7 @@
 This repo contains all of my config files that I use for various programs.
 Over time, I will be adding and changing what I use.
 
-## Installing Neovim config
+## Neovim
 
 Create a Symbolic link to the config directory where it expects to find the
 Neovim configuration directory.

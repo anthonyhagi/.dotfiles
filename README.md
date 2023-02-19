@@ -14,6 +14,6 @@ ln -s ~/.dotfiles/nvim/ ~/.config/
 
 ## Features to add on
 
-- [ ] Set packer to be installed automatically when loading up Neovim and it's not installed
+- [x] Set packer to be installed automatically when loading up Neovim and it's not installed
 - [ ] Add a bash script to automate installing the Neovim config Symbolic link
 

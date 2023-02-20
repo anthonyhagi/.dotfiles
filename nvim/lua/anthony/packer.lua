@@ -63,6 +63,11 @@ return require('packer').startup(function(use)
 
   use "lukas-reineke/indent-blankline.nvim"
 
+  -- Plugins required for Prettier to work
+  use('neovim/nvim-lspconfig')
+  use('jose-elias-alvarez/null-ls.nvim')
+  use('MunifTanjim/prettier.nvim')
+
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if packer_bootstrap then

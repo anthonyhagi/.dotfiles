@@ -10,29 +10,26 @@ lsp.ensure_installed({
 	'eslint'
 })
 
+-- Set up a function to execute organising imports within TS files.
+-- function organise_imports_ts()
+--   local params = {
+--     command = "_typescript.organiseImports",
+--     arguments = {vim.api.nvim_buf_get_name(0)},
+--     title = ""
+--   }
+--
+--   vim.lsp.buf.execute_command(params)
+-- end
+--
+-- lsp.configure('tsserver', {
+--   on_attach = function(client, bufnr)
+--     vim.keymap.set('n', '<leader>fi', '<cmd>lua organise_imports_ts()<cr>')
+--   end
+-- })
+
 -- (Optional) Configure lua language server for neovim
 lsp.nvim_workspace()
 
 lsp.setup()
 
--- Set up a function to execute organising imports within TS files.
--- local function organise_imports_ts()
---  local params = {
---    command = "_typescript.organiseImports",
---    arguments = {vim.api.nvim_buf_get_name(0)},
---    title = ""
---  }
---
---  vim.lsp.buf.execute_command(params)
--- end
 
---lspconfig.tsserver.setup {
---  on_attach = on_attach,
---  capabilities = capabilities,
---  commands = {
---    OrganiseImports = {
---      organise_imports_ts,
---      description = "Organise file imports"
---    }
---  }
---}

@@ -80,8 +80,10 @@ return require('packer').startup(function(use)
     config = function()
       require('Comment').setup()
     end
-
   }
+
+  use('simrat39/inlay-hints.nvim')
+
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if packer_bootstrap then

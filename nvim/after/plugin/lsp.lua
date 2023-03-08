@@ -56,6 +56,7 @@ lsp.configure('tsserver', {
         includeInlayVariableTypeHints = true,
       },
     },
+    importModuleSpecifier = "non-relative"
   }
 })
 

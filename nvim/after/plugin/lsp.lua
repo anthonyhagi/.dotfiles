@@ -10,6 +10,12 @@ lsp.ensure_installed({
 	'eslint'
 })
 
+lsp.on_attach(function (client, bufnr)
+  lsp.default_keymaps({buffer = bufnr})
+
+  vim.keymap.set('n', 'ga', '<cmd>lua vim.lsp.buf.code_action()<cr>', opts)
+end)
+
 -- Set up a function to execute organising imports within TS files.
 -- function organise_imports_ts()
 --   local params = {
@@ -44,6 +50,9 @@ lsp.configure('tsserver', {
         includeInlayPropertyDeclarationTypeHints = true,
         includeInlayVariableTypeHints = true,
       },
+      preferences = {
+        importModuleSpecifier = "non-relative"
+      }
     },
     typescript = {
       inlayHints = {

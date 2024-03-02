@@ -25,6 +25,8 @@ return require('packer').startup(function(use)
 	  requires = { {'nvim-lua/plenary.nvim'} }
   }
 
+  -- OLD THEME BELOW
+
   use({
 	  'rose-pine/neovim',
 	  as = 'rose-pine',
@@ -81,8 +83,6 @@ return require('packer').startup(function(use)
       require('Comment').setup()
     end
   }
-
-  use('simrat39/inlay-hints.nvim')
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins

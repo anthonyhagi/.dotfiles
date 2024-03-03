@@ -1,2 +1,0 @@
-require("smartcolumn").setup()
-

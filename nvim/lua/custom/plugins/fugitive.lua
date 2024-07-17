@@ -1,1 +1,1 @@
-return { "tpope/vim-fugitive", config = {} }
+return { "tpope/vim-fugitive", config = function() end }

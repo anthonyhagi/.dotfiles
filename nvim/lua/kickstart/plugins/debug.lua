@@ -11,7 +11,7 @@ return {
 	"mfussenegger/nvim-dap",
 	-- NOTE: And you can specify dependencies as well
 	dependencies = {
-		"nvim-neotest/nvim-neo",
+		"nvim-neo-tree/neo-tree.nvim",
 
 		-- Creates a beautiful debugger UI
 		"rcarriga/nvim-dap-ui",
@@ -87,4 +87,3 @@ return {
 		require("dap-go").setup()
 	end,
 }
-

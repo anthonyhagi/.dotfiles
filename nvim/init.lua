@@ -631,7 +631,7 @@ require("lazy").setup({
 		opts = {
 			notify_on_error = true,
 			format_on_save = {
-				timeout_ms = 500,
+				timeout_ms = 2500,
 				lsp_fallback = true,
 			},
 			formatters_by_ft = {
@@ -641,7 +641,7 @@ require("lazy").setup({
 				--
 				-- You can use a sub-list to tell conform to run *until* a formatter
 				-- is found.
-				go = { "goimports", "gofmt" },
+				go = { "gofmt", "goimports" },
 				javascript = { { "prettierd", "prettier" } },
 				typescript = { { "prettierd", "prettier" } },
 				typescriptreact = { { "prettierd", "prettier" } },
